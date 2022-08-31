@@ -1,1 +1,240 @@
+<html><head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript" src="https://bam.nr-data.net/1/NRJS-140e8e1440f20064fe5?a=1102479337&amp;v=1216.487a282&amp;to=NVZaZkMEV0UEWhBRCgwcdWRySn9EBFQBew0DWlZxXgtNRApVCF0XTXJbRlgTUEIc&amp;rst=634&amp;ck=1&amp;ref=https://r08.core.learn.edgenuity.com/ContentViewers/FrameChain/Activity&amp;ap=202&amp;be=266&amp;fe=623&amp;dc=347&amp;perf=%7B%22timing%22:%7B%22of%22:1661905333344,%22n%22:0,%22u%22:258,%22ue%22:258,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22ce%22:1,%22rq%22:2,%22rp%22:255,%22rpe%22:261,%22dl%22:259,%22di%22:347,%22ds%22:347,%22de%22:349,%22dc%22:623,%22l%22:623,%22le%22:623%7D,%22navigation%22:%7B%7D%7D&amp;fp=352&amp;fcp=352&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1216.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-140e8e1440f20064fe5","applicationID":"1102479337","transactionName":"NVZaZkMEV0UEWhBRCgwcdWRySn9EBFQBew0DWlZxXgtNRApVCF0XTXJbRlgTUEIc","queueTime":0,"applicationTime":202,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-140e8e1440f20064fe5",applicationID:"1102479337"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
 
+    
+    
+
+
+    <script type="text/javascript">
+        if (typeof console === "undefined") {
+            console = {
+                log: function () { },
+                warn: function () { }
+            };
+        }
+        document.domain =
+            (new function () { //Neat way to prevent creation of a global variable or function.
+                var domainSlices = document.domain.split(".");
+                this.results = domainSlices[domainSlices.length - 2] + "." + domainSlices[domainSlices.length - 1];
+            }).results;
+
+    </script>
+    
+    
+
+    <link href="//qa.education2020.com/cdn/uikit/0.4.css" rel="stylesheet">
+    <link href="/ContentViewers/Resources/Styles/FrameChain.css" rel="stylesheet">
+
+
+
+        <link href="/ContentViewers/Resources/Styles/blocker.css" rel="stylesheet">
+
+
+    <script src="/ContentViewers/Resources/Scripts/knockout-2.2.0.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="//qa.education2020.com/cdn/jqueryui.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/contentEngine/contentEngine.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/contentEngine/view/activity.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/knockout.mapping-latest.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/findAndReplaceDOMText.js"></script>
+    <script type="text/javascript" src="/ContentViewers/Scripts/edgenuity/utility/Namespace.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript" src="//qa.education2020.com/cdn/iFrameNotify.js"></script>
+    <script type="text/javascript" src="//qa.education2020.com/cdn/inactivityMessage/1.0/nocache/debug.js"></script>
+    <script src="/ContentViewers/Resources/Scripts/Blocker.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript">
+        $(function () {
+            console.log("Notifying of load");
+            iFrameNotify.notify({
+                frame: window.parent,
+                message: "load"
+            });
+        });
+    </script>
+
+    
+    
+    <script type="text/javascript">
+        if (typeof console === "undefined") {
+            console = { log: function () { } };
+        }
+
+    </script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="//learn.education2020.com/cdn/jqueryui/latest.js"></script>
+    <script type="text/javascript" src="//learn.education2020.com/cdn//mobile/latest.js"></script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/API.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/API-Audio.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/API-Video.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/API-FrameChain.js?contentVersion=4.5.8270.39544"></script>
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/audiojs/audio.min.js?contentVersion=4.5.8270.39544"></script>
+
+    
+    <script src="/ContentViewers/Resources/Scripts/FrameChain.js?contentVersion=4.5.8270.39544" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="/ContentViewers/Resources/Scripts/audiojs/audio.min.js?contentVersion=4.5.8270.39544"></script>
+
+    <script type="text/javascript">
+        API.E2020.useProxy = true;
+        API.Video.width = 854;
+        API.Video.height = 480;
+        API.Video.defaultHTML5 = true;
+        API.E2020.reviewMode = false;
+        API.E2020.showCorrectMode = false;
+        API.FrameChain.currentFrame = 1;
+        API.FrameChain.frameAddresses = ["//media.edgenuity.com/contentengine/frames/a9f80ae4-a202-e311-b2a8-0024e85f8e80/a9f80ae4-a202-e311-b2a8-0024e85f8e80.html","//media.edgenuity.com/contentengine/frames/ccf80ae4-a202-e311-b2a8-0024e85f8e80/ccf80ae4-a202-e311-b2a8-0024e85f8e80.html","//media.edgenuity.com/contentengine/frames/ebf80ae4-a202-e311-b2a8-0024e85f8e80/ebf80ae4-a202-e311-b2a8-0024e85f8e80.html","//media.edgenuity.com/contentengine/frames/f1f80ae4-a202-e311-b2a8-0024e85f8e80/f1f80ae4-a202-e311-b2a8-0024e85f8e80.html","//media.edgenuity.com/contentengine/frames/fcf80ae4-a202-e311-b2a8-0024e85f8e80/fcf80ae4-a202-e311-b2a8-0024e85f8e80.html"];
+        API.FrameChain.updateFramesProgressIds(["78e26d79-d49e-4a17-8c26-920dc8722171","1067af52-92ee-4162-bf17-c1289e0183fd","ab57847c-7c21-4ed7-9a55-1a0b3a1e87ae","208ed318-5edd-430a-ba64-2377babc1080","986cd6be-48df-4b0c-a2d1-2af40555754d"]);
+        API.FrameChain.serverComplete = false;
+        API.E2020.addresses.frameService = "//r08.core.learn.edgenuity.com/contentviewers/";
+        API.E2020.addresses.frameProxyLinks = "https://r08.core.learn.edgenuity.com/contentviewers/";
+        API.E2020.addresses.commonFolder = "//media.edgenuity.com/contentengine/common/";
+        API.E2020.addresses.videoFolder = "https://media.edgenuity.com/media/";
+        API.E2020.addresses.audioFolder = "//media.edgenuity.com/contentengine/media/";
+        API.E2020.addresses.wysiwygBasePath = "//core.learn.edgenuity.com/assets";
+        API.E2020.addresses.cdnContentFolder = "//learn.education2020.com/cdn";
+        API.E2020.addresses.gizmoService = "https://r08.core.learn.edgenuity.com/ContentViewers/Gizmo/Open";
+        API.Video.servers = [{"address":"https://media.edgenuity.com/media/","name":"Edgenuity Media Server","alive":true}];
+        API.E2020.schoolName = "LIFE TECH ACADEMY";
+        API.E2020.districtName = "LIFE TECH ACADEMY";
+        API.E2020.ViewerID = "96275575";
+        API.E2020.schoolID = "52766";
+        API.E2020.districtID = "16899";
+        API.E2020.version = "1.0.179";
+
+        API.E2020.toolbarOptions = "111000110000";
+        API.E2020.studentBuildId = "157fcc1e-5c23-ed11-8254-c8278268db57";
+
+        API.E2020.frameProgressID = "78e26d79-d49e-4a17-8c26-920dc8722171";
+        API.E2020.learningObjectKey = "6f9d6847-6a62-6365-7473-000000000000";
+        API.E2020.resultKey = "3482caf0-c228-ed11-8254-c8278268db57";
+        API.E2020.enrollmentKey = "157fcc1e-5c23-ed11-8254-c8278268db57";
+        API.FrameChain.submitted = false;
+
+        API.E2020.freeMovement = false;
+        API.Video.autoplay = true;
+        API.Video.useFlashPullMethod = true;
+
+        iFrameNotify.notify({
+            frame: window.parent,
+            message: "setOptions",
+            data: { width: '854' }
+        });
+    </script>
+
+
+
+    <script type="text/javascript">
+        //must set after HeadJs to make sure API exists
+        API.E2020.setDoNotTranslate = 'true';
+    </script>
+<style>.ssBtnDefault{position:absolute;z-index:100000000;background:none;border:none;outline:none;right:0;cursor:pointer;width:26px;height:26px;margin:0;padding:0;top:8px;right:8px;opacity:.6;pointer-events:all;transition-duration:.25s}.ssBtnDefault:hover{opacity:1 !important;transition-duration:.25s}.ssBtnDefault .fade{transition-duration:5s;opacity:0}.ssBtnYouTube{background:none;border:none;margin-right:20px !important;padding-top:0px !important;width:25px !important}.ytp-embed .ssBtnYouTube{width:20px !important;margin-right:15px !important}.ssBtnVimeo svg{width:22px}.ssBtnNetflix{background:none;border:none;cursor:pointer;width:4rem;margin-right:4rem;margin-top:-8px;display:inline-block;flex-shrink:0}.ssBtnNetflix>svg{transform:translateY(-0.3rem)}.ssBtnNetflix:hover{transform:scale(1.2);transition-duration:.25s}.ssBtnHulu{width:27px;margin-top:4px;margin-right:10px;opacity:.7;cursor:pointer}.ssBtnHulu:hover{opacity:1}.ssBtnAmazon{margin-right:1.5vw;outline:none;cursor:pointer;opacity:.8}.ssBtnAmazon:hover{opacity:1}.ssBtnHBO{width:30px;height:100%;right:70px;top:0px;position:relative;opacity:.7;cursor:pointer}.ssBtnHBO:hover{opacity:1;transform:scale(1.2)}.ssBtnDisney{opacity:.7}.ssBtnDisney:hover{opacity:1}.ssBtnDisney svg{width:25px !important;height:31px !important;padding-top:4px;margin-right:7px}@media(min-width: 1200px){.ssBtnAmazon{width:1.6666666667vw;height:1.6666666667vw}}@media(max-width: 1199px){.ssBtnAmazon{width:20px;height:20px}}body #ssTempHolder{position:fixed;z-index:1000000000000;width:100%;height:100%;top:0;pointer-events:none}body #ssTempHolder video{width:auto !important;height:auto !important;max-width:100% !important;max-height:100% !important;top:0 !important;left:0 !important;transform:none !important}body .ssElement{z-index:100000000000 !important}body .ssElement.netflix{background-color:#000}body .ssElement.netflix video{height:auto !important}body .ssElement.netflix.hideSubs .player-timedtext-text-container{display:none !important}body .ssWrapper{overflow:hidden}body .ssNotification{display:flex;width:100%;height:4rem;justify-content:center;align-items:center;position:fixed;z-index:1000000000;top:-4rem;animation-name:notification;animation-duration:2s;animation-iteration-count:1}@keyframes notification{0%{top:-4rem}25%{top:3rem}85%{top:3rem}}body .ssNotification .ssNContent{position:absolute;z-index:1000000000;padding:.75rem 1.25em;margin-bottom:1em;border:1px solid transparent;border-radius:.25em;font-size:12px;height:fit-content;top:0}body .ssNotification .ssNContent.success{background-color:#d4edda;border-color:#c3e6cb;color:#155724}body .ssNotification .ssNContent.fail{background-color:#edd4d4;border-color:#e6c3c3;color:#b62424}body .ssModal{position:absolute;z-index:100000000;right:20px;opacity:0;background-color:#fffefa;border-radius:3px;padding:25px;color:#525252;font-family:muli,sans-serif;letter-spacing:.8px;line-height:1.5rem;box-shadow:0px 4px 8px 0px rgba(0,0,0,.15);animation-name:animateOn;animation-duration:.2s;animation-fill-mode:forwards}@keyframes animateOn{from{opacity:0;top:0px}to{opacity:1;top:20px}}body .ssModal .ssButtons{margin-top:25px;text-align:right}body .ssModal .ssButtons .ssButton,body .ssModal .ssButtons a .ssButton{display:inline-block;padding:3px 12px 3px;margin-left:14px;border-radius:4px;box-shadow:0px 4px 8px 0px rgba(0,0,0,.15);background-color:#fff;color:#525252;font-size:11px;cursor:pointer;text-decoration:none}body .ssModal .ssButtons .ssButton.blue,body .ssModal .ssButtons a .ssButton.blue{background-color:#19acef;color:#fff}body .ssModal .icon{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0iTGF5ZXJfMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAgODMuOSIKCSBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgODMuOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiMwMEFERUY7fQo8L3N0eWxlPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC05NTIuMzYyMTgpIj4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zNS42LDk1Mi40Yy0xLjMsMC0yLjQsMS0yLjksMS44bC01LjYsMTEuMUgxMWMtNiwwLTExLDUtMTEsMTF2NDljMCw2LDUsMTEsMTEsMTFoNzhjNiwwLDExLTUsMTEtMTF2LTQ5CgkJYzAtNi01LTExLTExLTExSDcyLjlsLTUuNi0xMS4xYy0wLjUtMS4xLTEuNi0xLjgtMi45LTEuOEwzNS42LDk1Mi40TDM1LjYsOTUyLjR6IE0zNy42LDk1OC44aDI1LjJsNS41LDExLjEKCQljMC41LDEuMSwxLjYsMS44LDIuOSwxLjhoMTguMWMyLjYsMCw0LjUsMS45LDQuNSw0LjV2NDljMCwyLjYtMS45LDQuNS00LjUsNC41SDExLjFjLTIuNiwwLTQuNS0xLjktNC41LTQuNXYtNDkKCQljMC0yLjYsMS45LTQuNSw0LjUtNC41aDE4LjFjMS4xLDAsMi40LTAuOCwyLjktMS44TDM3LjYsOTU4Ljh6IE01MC4yLDk3OS44Yy0xMS42LDAtMjEsOS40LTIxLDIxczkuNCwyMSwyMSwyMXMyMS05LjQsMjEtMjEKCQlTNjEuOCw5NzkuOCw1MC4yLDk3OS44eiBNNTAuMiw5ODYuMmM4LjEsMCwxNC41LDYuNSwxNC41LDE0LjVzLTYuNSwxNC41LTE0LjUsMTQuNXMtMTQuNS02LjUtMTQuNS0xNC41UzQyLjEsOTg2LjIsNTAuMiw5ODYuMnoiLz4KPC9nPgo8L3N2Zz4K);background-repeat:no-repeat;width:30px;height:30px;vertical-align:top;margin-right:22px;margin-top:2px;display:inline-block}body .ssModal .body{display:inline-block;width:315px}body .ssModal .body .title{font-size:14px;font-weight:600;margin-bottom:7px}body .ssModal .body .description{font-size:12px;font-weight:lighter}body .ssModal:before{content:" ";position:absolute}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3Njc3MvU2NyZWVuc2hvdENvbnRyb2wvX2J1dHRvbnMuc2NzcyIsIndlYnBhY2s6Ly8uL3Njc3MvU2NyZWVuc2hvdENvbnRyb2wuc2NzcyIsIndlYnBhY2s6Ly8uL3Njc3MvU2NyZWVuc2hvdENvbnRyb2wvX25vdGlmaWNhdGlvbnMuc2NzcyIsIndlYnBhY2s6Ly8uL3Njc3MvU2NyZWVuc2hvdENvbnRyb2wvX21vZGFsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsY0FFQyxpQkFBQSxDQUNBLGlCQUFBLENBQ0EsZUFBQSxDQUNBLFdBQUEsQ0FDQSxZQUFBLENBQ0EsT0FBQSxDQUNBLGNBQUEsQ0FFQSxVQUFBLENBQ0EsV0FBQSxDQUNBLFFBQUEsQ0FDQSxTQUFBLENBQ0EsT0FBQSxDQUNBLFNBQUEsQ0FFQSxVQUFBLENBQ0Esa0JBQUEsQ0FFRyx3QkFBQSxDQUVBLG9CQUNJLG9CQUFBLENBQ0Esd0JBQUEsQ0FHSixvQkFDSSxzQkFBQSxDQUNBLFNBQUEsQ0FRUixjQUVDLGVBQUEsQ0FDQSxXQUFBLENBRUEsNEJBQUEsQ0FDRywwQkFBQSxDQUNBLHFCQUFBLENBRUgseUJBQ0MscUJBQUEsQ0FDQSw0QkFBQSxDQUlGLGdCQUNDLFVBQUEsQ0FHRCxjQUNDLGVBQUEsQ0FDQSxXQUFBLENBQ0EsY0FBQSxDQUVBLFVBQUEsQ0FDQSxpQkFBQSxDQUNBLGVBQUEsQ0FFQSxvQkFBQSxDQUNBLGFBQUEsQ0FVQSxrQkFFQyw2QkFBQSxDQUlFLG9CQUNJLG9CQUFBLENBQ0gsd0JBQUEsQ0FJTCxXQUVDLFVBQUEsQ0FDQSxjQUFBLENBQ0EsaUJBQUEsQ0FDQSxVQUFBLENBQ0EsY0FBQSxDQUVBLGlCQUNDLFNBQUEsQ0FJRixhQUNDLGtCQUFBLENBRUEsWUFBQSxDQUVFLGNBQUEsQ0FDQSxVQUFBLENBRUMsbUJBQ0ksU0FBQSxDQUlSLFVBQ0MsVUFBQSxDQUNHLFdBQUEsQ0FDQSxVQUFBLENBQ0EsT0FBQSxDQUNBLGlCQUFBLENBQ0EsVUFBQSxDQUNBLGNBQUEsQ0FFSCxnQkFDQyxTQUFBLENBQ0Esb0JBQUEsQ0FJRixhQUdJLFVBQUEsQ0FFSCxtQkFDQyxTQUFBLENBR0QsaUJBQ0MscUJBQUEsQ0FDQSxzQkFBQSxDQUNBLGVBQUEsQ0FDQSxnQkFBQSxDQUlGLDBCQUFBLGFBQUEsb0JBQUEsQ0FBQSxxQkFBQSxDQUFBLENBQ0EsMEJBQUEsYUFBQSxVQUFBLENBQUEsV0FBQSxDQUFBLENDL0lDLG1CQUNDLGNBQUEsQ0FDQSxxQkFBQSxDQUNBLFVBQUEsQ0FDQSxXQUFBLENBQ0EsS0FBQSxDQUNBLG1CQUFBLENBRUEseUJBQ0MscUJBQUEsQ0FDQSxzQkFBQSxDQUNBLHlCQUFBLENBQ0EsMEJBQUEsQ0FDQSxnQkFBQSxDQUNBLGlCQUFBLENBQ0EseUJBQUEsQ0FJRixnQkFDQywrQkFBQSxDQUlBLHdCQUVDLHFCQUFBLENBR0EsOEJBQ0Msc0JBQUEsQ0FLQSxrRUFFQyx1QkFBQSxDQU9KLGdCQUNDLGVBQUEsQ0NqREYscUJBRUksWUFBQSxDQUNBLFVBQUEsQ0FDQSxXQUFBLENBQ0Esc0JBQUEsQ0FDQSxrQkFBQSxDQUNBLGNBQUEsQ0FDQSxrQkFBQSxDQUNBLFNBQUEsQ0FFQSwyQkFBQSxDQUNBLHFCQUFBLENBQ0EsMkJBQUEsQ0FFQSx3QkFDSSxHQUFBLFNBQUEsQ0FDQSxJQUFBLFFBQUEsQ0FDQSxJQUFBLFFBQUEsQ0FBQSxDQUdKLGlDQUVJLGlCQUFBLENBQ0Esa0JBQUEsQ0FDQSxxQkFBQSxDQUNBLGlCQUFBLENBQ0EsNEJBQUEsQ0FDQSxtQkFBQSxDQUNBLGNBQUEsQ0FDQSxrQkFBQSxDQUNBLEtBQUEsQ0FFQSx5Q0FDSSx3QkFBQSxDQUNBLG9CQUFBLENBQ0EsYUFBQSxDQUdKLHNDQUNJLHdCQUFBLENBQ0Esb0JBQUEsQ0FDQSxhQUFBLENDMUNaLGNBQ0ksaUJBQUEsQ0FDQSxpQkFBQSxDQUVBLFVBQUEsQ0FFQSxTQUFBLENBRUEsd0JBQUEsQ0FDQSxpQkFBQSxDQUVBLFlBQUEsQ0FFQSxhQUFBLENBRUEsMkJBQUEsQ0FDQSxtQkFBQSxDQUNBLGtCQUFBLENBRUEsMENBQUEsQ0FFQSx3QkFBQSxDQUNBLHNCQUFBLENBQ0EsNEJBQUEsQ0FFQSxxQkFDSSxLQUNJLFNBQUEsQ0FDQSxPQUFBLENBRUosR0FDSSxTQUFBLENBQ0EsUUFBQSxDQUFBLENBSVIseUJBRUksZUFBQSxDQUNBLGdCQUFBLENBRUEsd0VBQ0ksb0JBQUEsQ0FFQSxvQkFBQSxDQUNBLGdCQUFBLENBRUEsaUJBQUEsQ0FDQSwwQ0FBQSxDQUNBLHFCQUFBLENBRUEsYUFBQSxDQUVBLGNBQUEsQ0FFQSxjQUFBLENBRUEsb0JBQUEsQ0FFQSxrRkFDSSx3QkFBQSxDQUNBLFVBQUEsQ0FLWixvQkFDSSx3REFBQSxDQUNBLDJCQUFBLENBRUEsVUFBQSxDQUNBLFdBQUEsQ0FFQSxrQkFBQSxDQUNBLGlCQUFBLENBQ0EsY0FBQSxDQUVBLG9CQUFBLENBR0osb0JBRUksb0JBQUEsQ0FDQSxXQUFBLENBRUEsMkJBQ0ksY0FBQSxDQUNBLGVBQUEsQ0FDQSxpQkFBQSxDQUVKLGlDQUNJLGNBQUEsQ0FDQSxtQkFBQSxDQUlSLHFCQUNJLFdBQUEsQ0FHQSxpQkFBQSIsInNvdXJjZXNDb250ZW50IjpbIi5zc0J0bkRlZmF1bHQge1xuXHRcblx0cG9zaXRpb246IGFic29sdXRlO1xuXHR6LWluZGV4OiAxMDAwMDAwMDA7XG5cdGJhY2tncm91bmQ6bm9uZTtcblx0Ym9yZGVyOiBub25lO1xuXHRvdXRsaW5lOiBub25lO1xuXHRyaWdodDowO1xuXHRjdXJzb3I6IHBvaW50ZXI7XG5cdFxuXHR3aWR0aDogMjZweDtcblx0aGVpZ2h0OiAyNnB4O1xuXHRtYXJnaW46IDA7Ly81JSA4cHggMDtcblx0cGFkZGluZzowO1xuXHR0b3A6OHB4O1xuXHRyaWdodDo4cHg7XG5cdFxuXHRvcGFjaXR5OiAuNjtcblx0cG9pbnRlci1ldmVudHM6IGFsbDtcblx0Lyp0cmFuc2l0aW9uLWZpbGwtbW9kZTogZm9yd2FyZHM7Ki9cbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMjVzO1xuXG4gICAgJjpob3ZlciB7XG4gICAgICAgIG9wYWNpdHk6IDEgIWltcG9ydGFudDsgXG4gICAgICAgIHRyYW5zaXRpb24tZHVyYXRpb246IC4yNXM7XG4gICAgfVxuXG4gICAgLmZhZGUge1xuICAgICAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiA1cztcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICB9XG4gICAgXG4gICAgLypzdmcge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOnJlZDtcbiAgICB9Ki9cbn1cblxuLnNzQnRuWW91VHViZSB7XG5cblx0YmFja2dyb3VuZDpub25lO1xuXHRib3JkZXI6IG5vbmU7XG5cdFxuXHRtYXJnaW4tcmlnaHQ6IDIwcHggIWltcG9ydGFudDtcbiAgICBwYWRkaW5nLXRvcDogMHB4ICFpbXBvcnRhbnQ7XG4gICAgd2lkdGg6IDI1cHggIWltcG9ydGFudDtcblxuXHQueXRwLWVtYmVkICYge1xuXHRcdHdpZHRoOiAyMHB4ICFpbXBvcnRhbnQ7XG5cdFx0bWFyZ2luLXJpZ2h0OiAxNXB4ICFpbXBvcnRhbnQ7XG5cdH1cbn1cblxuLnNzQnRuVmltZW8gc3ZnIHtcblx0d2lkdGg6IDIycHg7XG59XG5cbi5zc0J0bk5ldGZsaXgge1xuXHRiYWNrZ3JvdW5kOm5vbmU7XG5cdGJvcmRlcjogbm9uZTtcblx0Y3Vyc29yOiBwb2ludGVyO1xuXG5cdHdpZHRoOjRyZW07XG5cdG1hcmdpbi1yaWdodDo0cmVtO1xuXHRtYXJnaW4tdG9wOiAtOHB4O1xuXG5cdGRpc3BsYXk6aW5saW5lLWJsb2NrO1xuXHRmbGV4LXNocmluazogMDtcblx0XG5cdC8vbWFyZ2luLXRvcDotMXJlbTtcblx0Ly9oZWlnaHQ6Mi40cmVtO1xuXHQvL3dpZHRoOiA1MHB4O1xuXHQvL2hlaWdodDogMzVweCAhaW1wb3J0YW50O1xuXHQvL3dpZHRoOiAxMDAlOy8vMy42ZW0gIWltcG9ydGFudDtcbiAgICAvL2hlaWdodDogMTAwJTsvLzEuNmVtICFpbXBvcnRhbnQ7XG5cdC8vcGFkZGluZzowIDAgLjZlbSAwO1xuXG5cdCYgPiBzdmcge1xuXHRcdC8vbWFyZ2luLXRvcDotLjNyZW07XG5cdFx0dHJhbnNmb3JtOnRyYW5zbGF0ZVkoLS4zcmVtKTtcblx0XHQvL3RyYW5zZm9ybTogc2NhbGUoLjUpO1xuXHR9XG4gICAgXG4gICAgJjpob3ZlciB7XG4gICAgICAgIHRyYW5zZm9ybTpzY2FsZSgxLjIpO1xuXHQgICAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjI1cztcbiAgICB9XG59XG5cbi5zc0J0bkh1bHUge1xuXHRcblx0d2lkdGg6IDI3cHg7XG5cdG1hcmdpbi10b3A6IDRweDtcblx0bWFyZ2luLXJpZ2h0OjEwcHg7XG5cdG9wYWNpdHk6IC43O1xuXHRjdXJzb3I6IHBvaW50ZXI7XG5cdFxuXHQmOmhvdmVyIHtcblx0XHRvcGFjaXR5OiAxO1xuXHR9XG59XG5cbi5zc0J0bkFtYXpvbiB7XG5cdG1hcmdpbi1yaWdodDogMS41dnc7XG4gICAgXG5cdG91dGxpbmU6IG5vbmU7XG5cdFxuICAgY3Vyc29yOiBwb2ludGVyO1xuICAgb3BhY2l0eTogLjg7XG5cbiAgICAmOmhvdmVyIHtcbiAgICAgICAgb3BhY2l0eTogMTtcbiAgICB9XG59XG5cbi5zc0J0bkhCTyB7XG5cdHdpZHRoOiAzMHB4O1xuICAgIGhlaWdodDogMTAwJTtcbiAgICByaWdodDogNzBweDtcbiAgICB0b3A6IDBweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgb3BhY2l0eTogMC43O1xuICAgIGN1cnNvcjogcG9pbnRlcjtcblxuXHQmOmhvdmVyIHtcblx0XHRvcGFjaXR5OiAxO1xuXHRcdHRyYW5zZm9ybTogc2NhbGUoMS4yKTtcblx0fVxufVxuXG4uc3NCdG5EaXNuZXkge1xuXHQvL3dpZHRoOiAyNnB4O1xuICAgIC8vbWFyZ2luLXJpZ2h0OiAxM3B4O1xuICAgIG9wYWNpdHk6IC43O1xuXG5cdCY6aG92ZXIge1xuXHRcdG9wYWNpdHk6IDE7XG5cdH1cblxuXHRzdmcge1xuXHRcdHdpZHRoOiAyNXB4ICFpbXBvcnRhbnQ7XG5cdFx0aGVpZ2h0OiAzMXB4ICFpbXBvcnRhbnQ7XG5cdFx0cGFkZGluZy10b3A6IDRweDtcblx0XHRtYXJnaW4tcmlnaHQ6IDdweDtcblx0fVxufVxuXG5AbWVkaWEgKG1pbi13aWR0aDogMTIwMHB4KSB7IC5zc0J0bkFtYXpvbiB7IHdpZHRoOiAxLjY2NjY2NjY2NjY2NjY2NjV2dzsgaGVpZ2h0OiAxLjY2NjY2NjY2NjY2NjY2NjV2dzsgfSB9XG5AbWVkaWEgKG1heC13aWR0aDogMTE5OXB4KSB7IC5zc0J0bkFtYXpvbiB7IHdpZHRoOiAyMHB4OyBoZWlnaHQ6IDIwcHg7IH0gfVxuIiwiQGltcG9ydCBcIlNjcmVlbnNob3RDb250cm9sL2J1dHRvbnNcIjtcblxuYm9keSB7XG5cblx0I3NzVGVtcEhvbGRlciB7XG5cdFx0cG9zaXRpb246Zml4ZWQ7XG5cdFx0ei1pbmRleDoxMDAwMDAwMDAwMDAwO1xuXHRcdHdpZHRoOjEwMCU7XG5cdFx0aGVpZ2h0OjEwMCU7XG5cdFx0dG9wOjA7XG5cdFx0cG9pbnRlci1ldmVudHM6IG5vbmU7XG5cblx0XHR2aWRlbyB7XG5cdFx0XHR3aWR0aDphdXRvICFpbXBvcnRhbnQ7XG5cdFx0XHRoZWlnaHQ6YXV0byAhaW1wb3J0YW50O1xuXHRcdFx0bWF4LXdpZHRoOjEwMCUgIWltcG9ydGFudDtcblx0XHRcdG1heC1oZWlnaHQ6IDEwMCUgIWltcG9ydGFudDtcblx0XHRcdHRvcDogMCAhaW1wb3J0YW50O1xuXHRcdFx0bGVmdDogMCAhaW1wb3J0YW50O1xuXHRcdFx0dHJhbnNmb3JtOiBub25lICFpbXBvcnRhbnQ7XG5cdFx0fVxuXHR9XG5cdFxuXHQuc3NFbGVtZW50IHtcblx0XHR6LWluZGV4OiAxMDAwMDAwMDAwMDAgIWltcG9ydGFudDtcblx0XG5cdFx0XG5cdFxuXHRcdCYubmV0ZmxpeCB7XG5cdFxuXHRcdFx0YmFja2dyb3VuZC1jb2xvcjogIzAwMDAwMDtcblxuXHRcdFx0XG5cdFx0XHR2aWRlbyB7XG5cdFx0XHRcdGhlaWdodDogYXV0byAhaW1wb3J0YW50O1xuXHRcdFx0fVxuXG5cdFx0XHQmLmhpZGVTdWJzIHtcblx0XHRcdFx0XG5cdFx0XHRcdC5wbGF5ZXItdGltZWR0ZXh0LXRleHQtY29udGFpbmVyIHtcblxuXHRcdFx0XHRcdGRpc3BsYXk6bm9uZSAhaW1wb3J0YW50O1xuXHRcdFx0XHRcdC8vYm90dG9tOiAxMCUgIWltcG9ydGFudDtcblx0XHRcdFx0fVxuXHRcdFx0fVxuXHRcdH1cblx0fVxuXG5cdC5zc1dyYXBwZXIge1xuXHRcdG92ZXJmbG93OiBoaWRkZW47XG5cdH1cblxuXHRAaW1wb3J0IFwiU2NyZWVuc2hvdENvbnRyb2wvbm90aWZpY2F0aW9uc1wiO1xuXHRAaW1wb3J0IFwiU2NyZWVuc2hvdENvbnRyb2wvbW9kYWxcIjtcbn0iLCIuc3NOb3RpZmljYXRpb24ge1xuXG4gICAgZGlzcGxheTogZmxleDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDRyZW07XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgei1pbmRleDogMTAwMDAwMDAwMDtcbiAgICB0b3A6LTRyZW07XG5cbiAgICBhbmltYXRpb24tbmFtZTogbm90aWZpY2F0aW9uO1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gICAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogMTtcblxuICAgIEBrZXlmcmFtZXMgbm90aWZpY2F0aW9uIHtcbiAgICAgICAgMCUge3RvcDogLTRyZW07fVxuICAgICAgICAyNSUge3RvcDogM3JlbTt9XG4gICAgICAgIDg1JSB7dG9wOiAzcmVtO31cbiAgICB9XG5cbiAgICAuc3NOQ29udGVudCB7XG4gICAgICAgIC8vY29udGVudDogJ1NjcmVlbnNob3QgY29waWVkIHRvIGNsaXBib2FyZCEnO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHotaW5kZXg6IDEwMDAwMDAwMDA7XG4gICAgICAgIHBhZGRpbmc6IC43NXJlbSAxLjI1ZW07XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IC4yNWVtO1xuICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgIGhlaWdodDogZml0LWNvbnRlbnQ7XG4gICAgICAgIHRvcDowO1xuXG4gICAgICAgICYuc3VjY2VzcyB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDRlZGRhO1xuICAgICAgICAgICAgYm9yZGVyLWNvbG9yOiAjYzNlNmNiO1xuICAgICAgICAgICAgY29sb3I6ICMxNTU3MjQ7XG4gICAgICAgIH1cbiAgICBcbiAgICAgICAgJi5mYWlsIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZGQ0ZDQ7XG4gICAgICAgICAgICBib3JkZXItY29sb3I6ICNlNmMzYzM7XG4gICAgICAgICAgICBjb2xvcjogI2I2MjQyNDtcbiAgICAgICAgfVxuICAgIH1cblxufSIsIi5zc01vZGFsIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogMTAwMDAwMDAwO1xuXG4gICAgcmlnaHQ6MjBweDtcbiAgICBcbiAgICBvcGFjaXR5OiAwO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZmZmZWZhO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcblxuICAgIHBhZGRpbmc6IDI1cHg7XG5cbiAgICBjb2xvcjogIzUyNTI1MjtcblxuICAgIGZvbnQtZmFtaWx5OiBtdWxpLCBzYW5zLXNlcmlmO1xuICAgIGxldHRlci1zcGFjaW5nOiAuOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxLjVyZW07XG5cbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDhweCAwcHggcmdiYSgwLCAwLCAwLCAwLjE1KTtcblxuICAgIGFuaW1hdGlvbi1uYW1lOiBhbmltYXRlT247XG4gICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAuMnM7XG4gICAgYW5pbWF0aW9uLWZpbGwtbW9kZTogZm9yd2FyZHM7XG5cbiAgICBAa2V5ZnJhbWVzIGFuaW1hdGVPbiB7XG4gICAgICAgIGZyb20ge1xuICAgICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICAgIHRvcDogMHB4O1xuICAgICAgICB9XG4gICAgICAgIHRvIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgICB0b3A6IDIwcHg7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICAuc3NCdXR0b25zIHtcblxuICAgICAgICBtYXJnaW4tdG9wOiAyNXB4O1xuICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcblxuICAgICAgICAuc3NCdXR0b24sIGEgLnNzQnV0dG9uIHtcbiAgICAgICAgICAgIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xuICAgICAgICAgICAgXG4gICAgICAgICAgICBwYWRkaW5nOjNweCAxMnB4IDNweDtcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxNHB4O1xuICAgIFxuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCA4cHggMHB4IHJnYmEoMCwgMCwgMCwgMC4xNSk7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkZGRkZGO1xuICAgICAgICAgICAgXG4gICAgICAgICAgICBjb2xvcjogIzUyNTI1MjtcbiAgICBcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTFweDtcbiAgICBcbiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcblxuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIFxuICAgICAgICAgICAgJi5ibHVlIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTlhY2VmO1xuICAgICAgICAgICAgICAgIGNvbG9yOiAjRkZGRkZGO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgLmljb24ge1xuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2ltYWdlcy9pY29uQmx1ZS5zdmcnKTtcbiAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcblxuICAgICAgICB3aWR0aDozMHB4O1xuICAgICAgICBoZWlnaHQ6MzBweDtcblxuICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDIycHg7XG4gICAgICAgIG1hcmdpbi10b3A6MnB4O1xuXG4gICAgICAgIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xuICAgIH1cblxuICAgIC5ib2R5IHtcblxuICAgICAgICBkaXNwbGF5OmlubGluZS1ibG9jaztcbiAgICAgICAgd2lkdGg6MzE1cHg7XG5cbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiA3cHg7XG4gICAgICAgIH1cbiAgICAgICAgLmRlc2NyaXB0aW9uIHtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBsaWdodGVyO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgJjpiZWZvcmUge1xuICAgICAgICBjb250ZW50OiAnICc7XG4gICAgICAgIFxuXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><link rel="stylesheet" type="text/css" href="https://learn.education2020.com/cdn/highlights/1.0/cache/minify.css"></head>
+<body>
+<div id="submitBlocker"></div>
+<div id="submitLoading">
+    <div id="submitLoadingInner"></div>
+</div>
+    <div>
+        
+
+
+
+
+
+
+
+
+
+<div style="width:854px;text-align:left;">
+    <div id="invis-o-div" style="display: none;"></div>
+    <div id="main_area" style="position: relative;">
+        <div id="frameArea">
+            <iframe allow="autoplay; fullscreen" id="iFramePreview" onload="iFrameNotify.notify({frame: window.parent,message:'ChildFrameLoaded'});" hspace="0" vspace="0" frameborder="0" src="//media.edgenuity.com/contentengine/frames/f1f80ae4-a202-e311-b2a8-0024e85f8e80/f1f80ae4-a202-e311-b2a8-0024e85f8e80.html" style="width: 854px; height: 480px; display: none;"></iframe>
+        <div style="left: 0px; top: 0px; width: 854px; height: 480px; overflow: hidden; background-color: rgb(0, 0, 0); opacity: 1;"><div id="video_loading" style="position: absolute; inset: 0px; background-color: rgb(255, 255, 255); z-index: 999; display: none;"><div style="position:absolute;top:45%;width:100%;text-align:center;font-size:20px;font-weight:bold;">Loading video, please wait...</div></div><div id="Video_file_not_found" style="position:absolute;left:0;right:0;top:0;bottom:0;background-color:#fff;z-index:999;display:none;"><div style="position:absolute;top:45%;width:100%;text-align:center;font-size:20px;font-weight:bold;">Unable to load video file.</div></div><div id="home_video_container" style="width:854px; height:480px;position:relative;left:0;top:0;"><button class="ssBtnDefault"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50"><path class="st0" fill="#FFFFFF" style="fill:#FFFFFF" d="M17.6,4c-0.7,0-1.2,0.4-1.4,0.9l-2.8,5.5h-8c-3,0-5.4,2.5-5.4,5.5v24.5c0,3,2.5,5.5,5.4,5.5h39.2c3,0,5.4-2.5,5.4-5.5V16c0-3-2.5-5.5-5.4-5.5h-8L33.8,5c-0.3-0.6-0.9-1-1.5-1H17.6L17.6,4z M18.6,7.2h12.5l2.8,5.5c0.3,0.5,0.8,0.9,1.4,0.9h9c1.2,0,2.2,1,2.2,2.2v24.5c0,1.3-1,2.2-2.2,2.2H5.3c-1.2,0-2.2-1-2.2-2.2V15.9c0-1.3,1-2.2,2.2-2.2h9c0.6,0,1.2-0.4,1.4-0.9L18.6,7.2z M24.8,17.7c-5.8,0-10.4,4.7-10.4,10.4c0,5.8,4.7,10.4,10.4,10.4c5.8,0,10.4-4.7,10.4-10.4S30.7,17.7,24.8,17.7z M24.8,20.9c4,0,7.2,3.2,7.2,7.2s-3.2,7.2-7.2,7.2s-7.2-3.2-7.2-7.2C17.6,24.2,20.8,20.9,24.8,20.9z"></path></svg></button><video id="home_video_js" class="video-js" width="854" height="480" preload="" webkit-playsinline="" autoplay="" src="https://media.edgenuity.com/media/3106-01-02-05-04-instructional.mp4">    <source src="3106-01-02-05-01-anchor.mp4"></video></div></div></div>
+        <div id="frame_video_controls" style="width: 100%; z-index: 2; position: absolute; display: block;"><div id="uid1_chooseServerBG" class="Hidden"></div><div id="uid1_chooseServer" class="Hidden">Choose a server:<br>Magic<br>Local</div><div class="vcplayer" style="visibility: visible;"><ul class="controls"><li id="uid1_play" class="play" tabindex="0" style=""><a href="javascript:void(0);">Play</a></li><li id="uid1_settingsButton" class="SettingsButton"></li><li id="uid1_volumeButton" class="volume"><div id="slider-vertical" style="display: none;"><div id="slider-vertical-slider" style="height: 100%;" class="ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="height: 80%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="bottom: 80%;"></a></div></div><div id="slider-mute" style="display: none;"><i class="icon-media-volume2"></i></div><a href="javascript:void(0);" id="v_control">Volume Control</a><div id="vid_volume">80</div></li><li id="uid1_closedCaption" class="cc"><a href="javascript:void(0);">Closed Captioning</a></li><li id="uid1_time" class="timer">0:35 / 0:35</li><li id="uid1_progressContainer" class="Progress" style="width: auto;"><div id="uid1_scrubBar" class="ScubBar"></div><div id="uid1_buffered" class="Buffered" style="width: 548px;"></div><div id="uid1_played" class="Played" style="width: 548px;"></div><div id="uid1_scrubber" class="Scrubber" style="left: 541px;"></div><div id="uid1_progressLimit" class="ProgressLimit" style="left: 558px; display: none;"></div><div id="vid_pos" style="display: none"></div></li></ul></div></div>
+        <script>
+            if (API.E2020.setDoNotTranslate === "true" && API.E2020.toolbarOptions.substr(7, 1) === "1") {
+                var previewFrame = document.getElementById('iFramePreview');
+
+                //This only fires when the frame first opens. We have it duplicated for when new frames are selected
+                $('#iFramePreview').ready(function () {
+                    setTimeout(function () { previewFrame.contentWindow.eval(setNoTranslate.toString() + ' setNoTranslate();'); }, 600);
+                });
+
+                function setNoTranslate() {
+                    var content = document.getElementsByClassName("content")[0];
+                    if (content !== undefined) {
+                        instance = parent.findAndReplaceDOMText(content, {
+                            find: /[\+\-\u00F7\u00D7\u2014\u2013\u21D2\u2265=]/g,
+                            replace: function (portion, match) {
+                                called = true;
+                                var el = document.createElement('span');
+                                el.setAttribute("no-translate", "true");
+                                el.innerHTML = portion.text;
+                                return el;
+                            },
+                            forceContext: parent.findAndReplaceDOMText.NON_INLINE_PROSE
+                        });
+                    }
+                }
+            }
+        </script>
+    </div>
+    <script>
+        var previewFrame = document.getElementById('iFramePreview');
+
+        //This only fires when the frame first opens. We have it duplicated for when new frames are selected
+        $('#iFramePreview').ready(function () {
+            setTimeout(function () { previewFrame.contentWindow.eval(textNoTranslation.toString() + ' textNoTranslation();'); }, 600);
+        });
+
+        function textNoTranslation() {
+            setTimeout(function () {
+                $("#mainSVG").find("text.dragButtonLabel.unselectable").attr("no-translate", "true");
+                $("#mainSVG").find("text.tubeLabel.unselectable").attr("no-translate", "true");
+            }, 600);
+        };
+    </script>
+    <div id="bottom-area">
+        <div id="frameAudioControls" class="filter-below" style="display: none;">
+            <table class="navigation">
+                <tbody><tr>
+                    <td>
+                        <span id="btnEntryAudio" class="uibtn uibtn-40 uibtn-icon" onclick="API.Frame.playEntryAudio();" style="display: none;" title="Replay frame entry audio"><span class="icon-qb-audio1"></span> Intro</span>
+                        <span id="btnExitAudio" class="uibtn uibtn-40 uibtn-icon" onclick="API.Frame.playExitAudio();" style="display:none;" title="Replay frame final audio"><span class="icon-qb-audio1"></span> Final</span>
+                    </td>
+                    <td class="right">
+                        <span id="btnShowMe" class="uibtn uibtn-40 uibtn-icon" onclick="API.Frame.playShowMeVideo();" style="display: none;"><span class="icon-qb-showme1"></span> Show Me</span>
+                        <span id="btnHint" class="uibtn uibtn-40 uibtn-icon" onclick="API.Frame.playHintAudio();" style="display: none;"><span class="icon-qb-hint1"></span> Hint</span>
+                        <span id="btnCheck" class="uibtn uibtn-40 uibtn-icon" onclick="API.Frame.check();" style="display: none;"><span class="icon-qb-check1"></span> Done</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="frameCaptions" id="uid1_ccdiv" style="display: none;">
+            <!--<div class="cc-div-left"><span onclick="$('.cc-div-left').hide(); $('.right1').show();" style="float: right;" class="icon left1"><i></i></span><div class="cc-icon"><span>OPTIONS</span></div><div style="margin-bottom: 15px"><span style="font-size: 0.8em; margin-left: 25px;">THEME</span> <span style="font-size: 0.8em; margin-left: 65px;">SIZE</span></div>
+                <div><nav><ol class="inline"><li><a onclick="showSelected(this.id);" class="plainbtn" href="javascript:void(0);" id="theme_1">Aa</a></li><li style="padding-right: 10px;"><a onclick="showSelected(this.id);" style="background-color: #000000; color: white;" class="plainbtn" href="javascript:void(0);" id="theme_2">Aa</a></li><li><a onclick="showSelected(this.id);" style="background-color: #333333; color: white;" class="plainbtn" href="javascript:void(0);" id="size_1">A</a></li><li><a onclick="showSelected(this.id);" style="background-color: #333333; color: white;" class="plainbtn" href="javascript:void(0);" id="size_2">A</a></li></ol></nav></div></div>-->
+            <div class="cc-div-right"><i class="icon-media-cc" style="float: left;"></i><i id="removeBtn" onclick="$('.frameCaptions').hide();" class="icon-remove1"></i><div id="ccdiv_inner">about the same ratio.</div></div>
+        </div>
+        <div class="Toolbar">
+            <ol class="FramesList">
+            <li class="FrameLeft" onclick="API.FrameChain.backFrame();"> <a href="#_">Go Left</a></li><li id="frame1" class="FrameComplete" onclick="API.FrameChain.openFrame(1);"><a href="#_">Frame 2</a></li><li id="frame2" class="FrameComplete" onclick="API.FrameChain.openFrame(2);"><a href="#_">Frame 2</a></li><li id="frame3" class="FrameComplete" onclick="API.FrameChain.openFrame(3);"><a href="#_">Frame 2</a></li><li id="frame4" class="FrameComplete FrameCurrent" onclick="API.FrameChain.openFrame(4);"><a href="#_">Frame 2</a></li><li id="frame5" class="" onclick="API.FrameChain.openFrame(5);"><a href="#_">Frame 2</a></li><li class="FrameRight" onclick="API.FrameChain.nextFrame();" style="opacity: 1;"> <a href="#_">Go Right</a></li></ol>
+            <p><em id="frameProgress">4 of 5</em></p>
+        </div>
+    </div>
+</div>
+<audio>
+    </audio>
+    <audio>
+        </audio>
+        <script type="text/javascript">
+    API.FrameChain.updateFramesStatus(["incomplete","incomplete","incomplete","incomplete","incomplete"], 1);
+        </script>
+
+    </div>
+    
+    
+
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front" tabindex="-1" role="dialog" aria-describedby="ui-id-1" aria-labelledby="ui-id-2" style="display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">&nbsp;</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="ui-id-1" class="ui-dialog-content ui-widget-content"></div></div><div id="audiojs_wrapper0" class=" "><audio src="https://media.edgenuity.com/contentengine/frames/fcf80ae4-a202-e311-b2a8-0024e85f8e80/3106-01-02-05-05-entry.mp3"></audio></div><div id="audiojs_wrapper1" class=" loading"><audio></audio></div></body></html>
