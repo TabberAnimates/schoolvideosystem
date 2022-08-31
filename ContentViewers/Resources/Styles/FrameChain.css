@@ -1,0 +1,468 @@
+.Time
+{
+    position:absolute;bottom:0px;right:5px;width:100px;font-size:14px;color:White;text-align:right;
+}
+    
+.ScubBar
+{
+    position:absolute;top:18px;left:10px;right:10px;bottom:18px;border-radius: 15px;background-color:black;
+}
+    
+.Scrubber
+{
+    position:absolute;left:0px;top:0px;cursor:pointer;z-index:1;
+    background: url("../images/framechain/sprite.png") 0 0 no-repeat;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    background-position: -5px -360px;
+}
+    
+.HeaderBar
+{
+    position:absolute;top:0px;width:100%;height:7px;background-image:url(../images/framechain/not-loaded.gif);background-repeat:repeat;
+}   
+    
+.Background
+{
+    width:100%;height:25px;background-color:#4C4F58;   
+}
+
+.AudioButton
+{
+    position:absolute;left:19px;bottom:0px;width:18px;height:16px;background-image:url(../images/framechain/volume-control.gif);cursor:pointer;
+}
+
+.AudioButtonMuted
+{
+    position:absolute;left:19px;bottom:0px;width:18px;height:16px;background-image:url(../images/framechain/volume-control-muted.gif);cursor:pointer;
+}
+
+.AudioTrack
+{
+    position:absolute;left:40px;bottom:8px;width:40px;height:2px;background-color:#858585;
+}
+
+.AudioBar
+{
+    position:absolute;left:60px;bottom:4px;width:3px;height:10px;background-color:#A7A8AC;cursor:pointer;
+}
+
+.ClosedCaption
+{
+    position:absolute;left:83px;bottom:0px;width:18px;height:16px;background-image:url(../images/framechain/closed-captioning.gif);cursor:pointer;
+}    
+    
+.Play
+{
+    position:absolute;left:0px;bottom:0px;width:19px;height:16px;background-image:url(../images/framechain/play.gif);cursor:pointer;
+}
+
+.Pause
+{
+    position:absolute;left:0px;color: white; padding: 6px 2px;/*bottom:0px;width:19px;height:16px;background:url(../images/framechain/pause.gif) no-repeat;*/cursor:pointer;
+}
+
+.Buffered
+{
+    position:absolute;top:18px;left:10px;bottom:18px;background-image:url(../images/framechain/loaded.gif);background-repeat:repeat;border-radius: 15px;cursor:pointer;
+}
+
+.Played
+{
+    position:absolute;top:18px;left:10px;right:10px;bottom:18px;border-radius: 15px;background-color:#F48708;background:linear-gradient(to bottom, #f8731f 0%, #d03a08 100%);cursor:pointer;
+}
+
+.ui-dialog .ui-dialog-content {
+    color:#dddddd;
+    background-color:#666666 !important;
+}
+
+.SettingsButton {
+    float:right;
+    width:45px;
+    height:45px;
+    background:url(../images/framechain/gear-icon.png) no-repeat;
+    background-position:10px 10px;
+    cursor:pointer;
+}
+
+.Progress {
+    height: 45px;
+    position: relative;
+    margin-left: 45px;
+    margin-right: 237px;
+    padding: 18px;
+    border-right: 1px solid #0d0a07;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+.ProgressLimit {
+    height:15px;
+    width:5px;
+    background-color:#999999;
+    position:absolute;
+    top:15px;
+    left:0;
+}
+
+.Hidden
+{
+    display:none;   
+}
+
+.ChooseServer
+{
+    width:300px;
+    height:200px;
+    position:absolute;
+    top:100px;
+    left:50%;
+    margin-left:-150px;
+    background-color:Gray;
+}
+
+.ChooseServerBG
+{
+    
+}
+
+BODY
+{
+    background-color:#444;
+    font-family: Arial;
+}
+#frameHeader
+{
+    color:#FFFFFF;
+    padding-bottom:28px;
+    font-size:24px;
+    height:24px;
+    line-height:24px;
+    vertical-align:middle;
+}
+#frameContainer
+{
+    margin:0 auto;
+    width:800px;
+}
+#frameArea
+{
+    position:relative;
+    background-color:#FFFFFF;
+}
+
+.frameCaptions
+{
+    height:120px;
+    width:100%;
+    display:none;
+    /*position:absolute;*/
+    /*top:-36px;*/
+    color:#FFFFFF;
+    font-size:16px;    
+    /*background-color:#4d4f58 ;*/
+    /*margin: 20px 0px 0px 0px;*/
+    background: none repeat scroll 0 0 #000000;    
+    font-weight: bold;
+    line-height: 15px;
+    margin-top: 10px;    
+}
+#frame_video_controls
+{
+    position: absolute;
+    top: 100%;
+    margin-top:-47px;
+}
+
+#bottom-area {
+}
+
+.cc-div-left {
+    width: 25%; 
+    margin:10px 10px;
+    float:left;
+}
+
+.cc-div-right {
+    overflow: hidden;                  
+    font-weight: normal;  
+    background-color: #151515; 
+    height: 120px;      
+}
+
+#ccdiv_inner .icon-list {
+    padding: 0px !important;
+}
+
+#ccdiv_inner {
+    padding: 40px 10px; 
+    width: 800px;
+}
+#removeBtn {
+    float: right; 
+    margin: 5px;
+}
+
+.cc-icon {
+    background:url(../images/framechain/closed-captioning.gif) no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.cc-icon span {
+    padding: 0 0 0 35px; 
+    font-size: 0.8em;
+}
+
+.selected-option {
+    border: 2px solid #f6a315 !important;
+}
+
+#ccdiv_inner
+{
+    margin-top: 8px;
+}
+
+#frameVideoControls
+{
+    font-size:12px;
+    color:#ffffff;
+    height:25px;
+    background-color:#4C4F58;
+}
+
+#frameAudioControls
+{
+    position:relative;    
+    font-size:12px;
+    width: 100%;
+}
+
+.vcplayer .controls li.progress > div > div {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8731f', EndColorStr='#d03a08')"; /* IE8 */    
+}
+
+#frameAudioControls.left,
+#frameAudioControls.right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: inherit;
+}
+
+#frameAudioControls.left {
+    text-align: left;
+}
+
+#frameAudioControls.right {
+    text-align: right;
+}
+
+#frameNav
+{
+    height:25px;
+    background-color:#FFFFFF;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    position:relative;
+}
+
+.VideoSize{width:800px;height:450px;margin-left:-20px;}
+
+.fComplete,
+.fIncomplete,
+.fMarked,
+.fCurrent
+{
+    width:16px;
+    height:16px;
+    background-repeat:no-repeat;
+    background-position:center;
+    border:none;
+}
+
+.fComplete
+{
+    background-image: url(../images/framechain/complete.png);
+}
+
+.fIncomplete
+{
+    background-image: url(../images/framechain/incomplete.png);
+}
+
+.fMarked
+{
+    background-image: url(../images/framechain/marked.png);
+}
+
+.fCurrent
+{
+    background-image: url(../images/framechain/current.png);
+}
+
+.Toolbar {
+  color:white;
+  background: none;
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.Toolbar .FramesList {
+  margin: 0;
+  padding: 2px 34px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.Toolbar .FramesList li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 3px;
+  text-indent: -9999px;
+}
+.Toolbar .FramesList li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(100, 100, 100);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+.Toolbar .FramesList li a:hover, .Toolbar .FramesList li a:focus {
+  border: 1px solid #f36c1c;
+}
+.Toolbar .FramesList li.FrameLeft,
+.Toolbar .FramesList li.FrameRight {
+  margin: 0 10px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+}
+.Toolbar .FramesList li.FrameLeft a,
+.Toolbar .FramesList li.FrameRight a {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.Toolbar .FramesList li.FrameLeft {
+  margin-left: 0;
+  left: 0;
+}
+.Toolbar .FramesList li.FrameLeft a {
+  background: url(../images/FrameChain/frame-left.png) 50% 50% no-repeat;
+}
+.Toolbar .FramesList li.FrameRight {
+  margin-right: 0;
+  right: 0;
+}
+.Toolbar .FramesList li.FrameRight a {
+  background: url(../images/FrameChain/frame-right.png) 50% 50% no-repeat;
+}
+.Toolbar .FramesList li.FrameHighlight a {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.Toolbar .FramesList li.FrameCurrent a {
+  background-color: #fa7621;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7621), to(#cb3305));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(top, #fa7621, #cb3305);
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+
+  background-image: -moz-linear-gradient(top, #fa7621, #cb3305);
+  /* Firefox 3.6-15 */
+
+  background-image: -o-linear-gradient(top, #fa7621, #cb3305);
+  /* Opera 11.10-12.00 */
+
+  background-image: linear-gradient(to bottom, #fa7621, #cb3305);
+  /* Firefox 16+, IE10, Opera 12.50+ */
+
+  border: 1px solid #f78d4c;
+}
+
+.Toolbar .FramesList li.FrameComplete a {
+  border: 1px solid #F97420;
+}
+
+#invis-o-div {
+    position:absolute; height:575px; width:800px; display:none; z-index:9001;background-color:#333;opacity:0.01;filter:alpha(opacity=1);
+}
+
+#iFramePreview {
+    width:800px;height:450px;border:none;
+}
+
+#replayAudioText {
+    margin-left:15px;margin-right:20px;
+}
+
+.IpadPlay
+{
+    position:absolute;
+    /*width:200px;
+    height:200px;*/
+    left:50%;
+    top:50%;
+    margin-left:-17px;
+    margin-top:-17px;
+    /*background-image:url(../images/framechain/ipad_play.png);
+    background-size:cover;*/
+    z-index:99999;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.navigation {
+    width:100%;height:100%;border-spacing:0;border-collapse:collapse;
+}
+
+.navigation .uibtn {
+    text-align:center;
+    margin: 0 10px;
+}
+
+.navigation td, .navigation th
+{
+    padding: 0;
+}
+
+.navigation td.right {
+    text-align:right;
+}
+
+A:focus
+{
+	outline: none;
+	border: none;
+}
+
+.audiojs {
+    position:absolute;
+    left:0;
+    top:0;
+    visibility:hidden;
+}    
